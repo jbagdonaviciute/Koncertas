@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(37, 37, 53);">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncertas</title>
+    <style>
+        h1 {color: aliceblue; font-family: sans-serif; text-align: center;}
+        h2 {color: aliceblue; font-family: sans-serif;}
+        h3 {color: aliceblue; font-family: sans-serif;}
+        body {
+            color: aliceblue;
+            font-family: sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid rgb(180, 196, 211);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=Registruotis] {
+          background-color: rgb(67, 230, 221);
+          color: rgb(37, 37, 53);
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=Registuruotis]:hover {
+          background-color: rgb(218, 218, 224);
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #635dbe;
+          padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Grupes koncertas</h1>
+    <h2>Video</h2>
+        <video width="400" src="video/video-1.mp4" controls></video>
+        <video width="400" src="video/video-2.mp4" controls></video>
+        <video width="400" src="video/video-3.mp4" controls></video>
+
+    <h2>Audio</h2>
+        <audio width="100" src="audio/audio-1.mp3" controls autoplay muted loop ></audio>
+        <audio width="100" src="audio/audio-2.mp3" controls></audio>
+        <audio width="100" src="audio/audio-3.mp3" controls></audio>
+
+    <h2>Nuotraukos</h2>
+        <img width="300" height="200" src="jpg/img-1.jpg" alt="jpg-1"
+        style="object-fit: cover;
+        object-position: top;">
+        <img width="300" height="200" src="jpg/img-2.jpg" alt="jpg-2"
+        style="object-fit: cover; object-position: top;"><br>
+
+        <img height="200" src="png/png-1.png" alt="png-1">
+        <img height="100" src="png/png-2.png" alt="png-2"><br>
+
+        <img width="300" height="200" src="gif/gif-1.webp" alt="gif-1"
+        style="object-fit: cover;">
+        <img width="300" height="200" src="gif/gif-2.webp" alt="gif-2"
+        style="object-fit: cover;">
+
+    <h3>Koncerto vieta</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.709974621253!2d23.911992877659387!3d54.89045995807841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72271d0b1c3e1%3A0xff421580fc4b8b14!2s%C5%BDalgirio%20arena!5e0!3m2!1slt!2slt!4v1733990109022!5m2!1slt!2slt" width="600" height="450" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>Registracija</h3>
+    
+    <div class="container">
+        <form>
+            <label for="Vardas">Vardas</label>
+            <input type="text" id="Vardas" name="Vardas" placeholder="Jūsų vardas...">
+            <label for="Pavardė">Pavardė</label>
+            <input type="text" id="Pavardė" name="Pavardė" placeholder="Jūsų pavardė...">
+            <label for="El. paštas">El. paštas</label>
+            <input type="text" id="El. paštas" name="El.paštas" placeholder="Jūsų el.paštas...">
+            <input type="Registruotis" value="Registruotis">
+        </form>
+
+    </div>
+</body>
+</html>
